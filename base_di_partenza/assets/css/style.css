@@ -1,0 +1,367 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 15px;
+  background-image: url("../img/sfondo.png");
+  background-position: center center;
+}
+* {
+  box-sizing: border-box;
+}
+hr {
+  display: none;
+} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+  background: rgb(0, 160, 198);
+  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
+  margin-bottom: 1.5em;
+  padding: 2em 1.5em;
+}
+header div img {
+  margin-bottom: 20px;
+}
+header nav ul {
+  margin: 0;
+}
+header nav li {
+  display: inline-block;
+  list-style: none;
+}
+header nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: red;
+}
+header nav li a::before {
+  content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+}
+section {
+  background-color: #e3e3e3;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+section h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  background-color: #a7a7a7;
+  padding: 0.5rem;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+  font-size: 4.2rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
+}
+p,
+main li,
+h2 {
+  font-size: 1.9rem;
+}
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
+  margin-bottom: 1.2em;
+}
+h1 + p {
+  color: #a0a0a0;
+}
+
+article img {
+  max-width: 7rem;
+  padding: 0.5rem;
+  border: 0.4rem solid cornflowerblue;
+  outline: 0.4rem solid #a02571;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+}
+a {
+  color: #00a0c6;
+  font-weight: bold;
+}
+strong {
+  color: #a02571;
+  font-weight: bold;
+}
+code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 5px;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+  margin-bottom: 2em;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.9rem;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
+th,
+td {
+  padding: 12px 15px;
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 1.9rem;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px dashed #333;
+}
+button {
+  padding: 4px 7px;
+  background-color: #3f6bca;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+  text-align: center;
+  color: #333;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+aside div {
+  background-color: #e3e3e3;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 1em;
+  text-align: right;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(53, 53, 53);
+  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  box-shadow: 0 3px 3px #444;
+  color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+footer p {
+  font-size: 2.3rem;
+}
+
+footer a {
+  color: fuchsia;
+}
+/* 
+ 0px fino a 575px ==> mobile
+ 576px fino a 767px ==> tablet
+ 768px fino a 991px ==> medium
+ 992px fino a 1199px ==> large
+ 1200px fino a 1399px ==> x-large
+ 1400px fino a Infinito ==> xx-large
+ 
+ */
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 7rem;
+    line-height: 7.7rem;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 2.1rem;
+  }
+  article p:not(:first-child) {
+    font-size: 2rem;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  article li {
+    font-size: 2.1rem;
+  }
+
+  table {
+    width: 50rem;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  input[type="email"] {
+    width: 47rem;
+    padding: 1.5rem;
+  }
+
+  button {
+    padding: 1.5rem;
+    padding-inline: 3rem;
+  }
+
+  footer address {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 100rem;
+    margin: auto;
+  }
+  header > div > img,
+  header > div > p,
+  nav,
+  nav > div {
+    display: inline;
+    margin-left: 0;
+    vertical-align: middle;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0;
+    padding-inline-start: 3cqi;
+    padding-inline-end: 3.5rem;
+  }
+  header > div {
+    display: flex;
+    align-items: center;
+  }
+
+  header > div > p,
+  header > div > img {
+    margin-bottom: 0;
+  }
+
+  header > div > p {
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+  }
+
+  nav > p {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+  }
+
+  header > div > img {
+    max-width: 13rem;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+  article > p,
+  ul li,
+  ol li {
+    font-size: 1.6rem !important;
+  }
+
+  table {
+    width: 70rem;
+  }
+
+  #flexboxes {
+    display: flex;
+  }
+
+  aside > #flexboxes {
+    justify-content: center;
+    min-width: 33%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  section {
+    border-radius: 15px;
+    min-width: 50%;
+  }
+
+  input[type="email"] {
+    width: 28rem;
+    padding: 1.5rem;
+  }
+
+  .articles {
+    min-width: 33.3%;
+    margin-bottom: 0;
+  }
+
+  footer p,
+  footer address {
+    font-size: 2rem;
+    padding-inline: 8rem;
+  }
+}
