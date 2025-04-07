@@ -365,3 +365,27 @@ footer a {
     padding-inline: 8rem;
   }
 }
+@media print {
+  header,
+  footer,
+  .flexboxes,
+  aside,
+  section,
+  iframe {
+    display: none;
+  }
+
+  #badge {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  h1,
+  h2,
+  p,
+  ul li,
+  ol li,
+  table {
+    font-size: unset;
+  }
+}
